@@ -63,6 +63,12 @@
                     android:id="@+id/characterRaceSpinner"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/arrow"
+                android:layout_gravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -74,7 +80,7 @@
                 />
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="100dp"
                 android:layout_marginVertical="5dp"
                 android:orientation="horizontal"
                 tools:ignore="UselessParent">
@@ -126,7 +132,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
                 android:orientation="horizontal"
                 tools:ignore="UselessParent">
 
@@ -167,7 +172,9 @@
 
                 <RadioGroup
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup"
+                >
 
                     <TextView
                         android:layout_width="match_parent"
@@ -177,18 +184,21 @@
                         android:textSize="15sp"/>
 
                     <RadioButton
+                        android:id="@+id/SneakyBeaky"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:text="Ukryty"/>
 
                     <RadioButton
+                        android:id="@+id/Priorities"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:text="Priorytetowy"/>
 
                     <RadioButton
+                        android:id="@+id/HeadFirst"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
@@ -311,7 +321,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Podsumowanie!"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center" />
 
                 <TextView
                     android:id="@+id/summaryTextView"
